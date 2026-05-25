@@ -776,7 +776,7 @@
       btn.style.pointerEvents = 'none';
 
       try {
-        const res = await fetch('https://grupoafter-api.vercel.app/api/subscribe', {
+        const res = await fetch('/api/subscribe', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: email })
